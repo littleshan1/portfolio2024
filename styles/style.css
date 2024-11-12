@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  overflow-x: hidden;
+}
+body nav {
+  padding-left: 3.5rem;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+body nav ul {
+  display: flex;
+}
+body nav ul li {
+  list-style-type: none;
+  margin: 1rem;
+}
+body nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+
+body nav ul li a.active {
+  color: rgb(53, 201, 134);
+  border-bottom: 1.5px solid rgb(53, 201, 134);
+}
+
+body nav ul li a:hover {
+  color: rgb(54, 212, 138);
+}
+
+body main section.main-area {
+  min-height: 70vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body main section.main-area div.info {
+  flex-basis: 450px;
+  padding: 1rem;
+}
+body main section.main-area div.info h1 {
+  font-size: 3.5rem;
+}
+body main section.main-area div.info h2 {
+  font-size: 1rem;
+}
+body main section.main-area div.info a {
+  color: white;
+  background-color: rgb(53, 201, 134);
+  padding: 0.25rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+body main section.main-area div.info a:hover {
+  transform: scale(1.2);
+}
+body main section.main-area div.img-area {
+  margin-left: 200px;
+  flex-basis: 450px;
+}
+body main section.main-area div.img-area img {
+  transform: scale(0.8);
+  width: 100%;
+}
+
+main section.about-me {
+  text-align: justify;
+  padding-top: 6rem;
+  padding-left: 6rem;
+  padding-bottom: 4rem;
+  background-color: rgb(198, 226, 217);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section.about-me section.description {
+  padding-right: 4rem;
+  width: 50%;
+}
+
+main section.about-me section.education2 {
+  width: 50%;
+}
+
+body main section.about-me section.education2 li {
+  text-align: left;
+  margin-left: 2rem;
+}
+
+body main section.about-me section.education2 hr {
+  border-top: 2px solid;
+  width: 85%;
+}
+
+body main section.experience {
+  padding-top: 3em;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+body main section.experience h5 {
+  padding-left: 5rem;
+  text-align: left;
+}
+
+body main section.experience hr {
+  border-top: 1.5px solid;
+  margin-left: 3rem;
+  width: 90%;
+}
+
+body main section.experience ul {
+  margin-left: 5rem;
+  margin-right: 8rem;
+  text-align: justify;
+}
+
+body main section.experience div.container {
+  display: flex;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body main section.experience div.container span.left {
+  margin-left: 50px;
+}
+
+body main section.experience div.container span.right {
+  margin-right: 50px;
+}
+
+body main section.progress-bar-area {
+  padding-top: 4rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 4rem;
+  background-color: rgb(198, 226, 217);
+}
+
+body main section.progress-bar-area p {
+  padding-top: 0.2rem;
+}
+
+@media screen and (max-width: 800px) {
+  body nav {
+    padding-left: 0rem;
+  }
+  body main section.about-me section.description {
+    width: 80%;
+  }
+  body main section.main-area {
+    margin: 2rem;
+  }
+
+  body main section.experience div.container {
+    align-items: start;
+    padding-left: 7em;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  body nav {
+    position: static;
+  }
+  body nav ul {
+    flex-direction: column;
+  }
+} /*# sourceMappingURL=style.css.map */
