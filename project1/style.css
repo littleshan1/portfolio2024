@@ -122,7 +122,7 @@ nav ul li a:hover {
 }
 
 main {
-  background-color: #f5f2ef;
+  background-color: #f2ebe5;
   display: flex;
   flex-wrap: wrap;
 }
@@ -133,6 +133,10 @@ main.no-flex {
 
 main section {
   padding: 1rem;
+}
+
+section.background {
+  color: #f2ebe5;
 }
 
 section.left {
@@ -177,33 +181,34 @@ section.right ul {
   margin-left: 2rem;
 }
 
-.player {
-  margin: 2rem;
-  padding: 0.5rem;
-}
-
-.player h2 {
-  margin-top: 1rem;
-  color: #647295;
-  margin-bottom: 0.8rem;
-}
-.player h3 {
-  font-size: 1 rem;
-  margin-top: 0rem;
-  color: #2b252d;
-}
-
-.player h5 {
-  font-size: 1.05rem;
-  color: rgb(6, 120, 120);
-}
-
 div.japan {
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 2rem;
 }
 
+section.background {
+  div.japan {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  div.japan .image {
+    flex: 1 1 300px;
+    display: flex;
+    align-items: center;
+  }
+
+  div.japan .image img {
+    width: 100%;
+  }
+
+  div.japan .info {
+    flex: 3 1 600px;
+    padding: 2rem;
+  }
+}
 div.japan .image {
   flex: 1 1 300px;
   display: flex;
@@ -219,45 +224,139 @@ div.japan .info {
   padding: 2rem;
 }
 
-div.info {
-  margin: 2rem;
-  border-left: 1px solid #647295;
-  border-collapse: collapse;
-  padding: 2px 4px;
-}
-
-div.info h3 {
-  padding: 2rem;
-}
-
-div.info ul li {
-  padding: 0.5rem;
-  margin-left: 3rem;
-}
-
-div.uiux {
+/* 讓 main 的內容居中顯示 */
+.uiux-design {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  flex-wrap: wrap; /* 小螢幕換行 */
+  min-height: 100vh; /* 讓 main 滿高 */
+  gap: 20px; /* 區塊之間的間距 */
+  padding: 20px;
+  text-align: left; /* 文字置中 */
 }
 
-div.uiux img {
-  text-align: center;
+/* 左側文字區 */
+.player {
+  flex: 1 1 60%; /* 區塊寬度，允許彈性調整 */
+  max-width: 1200px;
+}
+
+/* 右側圖片區 */
+.uiux {
+  flex: 1 1 40%; /* 圖片容器寬度，允許彈性調整 */
+  max-width: 1200px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section.image {
-  flex: 1 1 700px;
-  justify-content: center;
-  align-items: center;
+/* 圖片等比縮放 */
+.img {
+  max-width: 100%; /* 圖片寬度不超過容器 */
+  height: auto; /* 等比縮放高度 */
+  object-fit: contain; /* 顯示完整圖片 */
 }
 
-.taiwan h4 {
-  padding: 1rem;
+/* Main container styling */
+main.marketing {
+  font-family: Arial, sans-serif;
+  padding: 40px; /* Add padding around the content */
+  background-color: #f2ebe5;
 }
 
-.taiwan ul {
-  margin-left: 2rem;
+/* Content section styling */
+.marketing {
+  background-color: #f2ebe5;
+  border-radius: 8px;
+  padding: 20px; /* Add padding inside the section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section headings styling */
+.marketing h3,
+.marketing h4 {
+  text-align: left; /* Align headings to the left */
+  margin-bottom: 10px;
+}
+
+/* List styling */
+.marketing ul {
+  list-style-type: none;
+  padding-left: 0;
+  padding-bottom: 10px;
+}
+
+.marketing li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #333;
+  padding-bottom: 10px;
+  text-align: left; /* Align list items to the left */
+}
+
+.marketing p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+  text-align: left; /* Align paragraph text to the left */
+  margin-top: 20px;
+}
+
+/* Main container centering */
+.fashion {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  text-align: left; /* Centers the text */
+  padding: 20px; /* Optional, for padding around the content */
+  background-color: #f2ebe5; /* Optional, background color */
+}
+
+/* Section styling */
+.fashion section {
+  width: 100%; /* Ensures sections take up full width */
+  max-width: 1200px; /* Optional, to limit the maximum width */
+  margin-bottom: 30px; /* Adds spacing between sections */
+}
+
+/* Heading and paragraph styling */
+.fashion h2,
+.fashion h3,
+.fashion p {
+  margin: 10px 0; /* Adds margin to each element */
+}
+
+/* Image styling */
+.fashion-img img,
+.image img {
+  max-width: 100%;
+  height: auto; /* Ensures images scale responsively */
+  display: block; /* Removes inline display for images */
+  margin: 0 auto; /* Centers the image */
+}
+
+@media (min-width: 1920px) {
+  .uiux-design {
+    padding: 40px; /* 增加容器的內邊距 */
+    font-size: 1.2rem; /* 增加字體大小 */
+  }
+
+  .player {
+    flex: 1 1 50%; /* 設置更寬的佈局 */
+    max-width: 1200px; /* 限制最大寬度 */
+  }
+
+  .uiux {
+    flex: 1 1 50%; /* 設置更寬的佈局 */
+    max-width: 1200px; /* 限制最大寬度 */
+  }
+
+  .img {
+    max-width: 100%; /* 保持圖片寬度不超過容器 */
+    height: auto; /* 自動調整圖片高度 */
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -320,3 +419,4 @@ section.image {
     margin: 1rem;
   }
 }
+
