@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shan's Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/contact.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">About Me</a></li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.behance.net/gallery/212318751/UIUX-Designer-2024"
+            >Portfolio- 2024</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="./project1/index.html">Portfolio- 2023</a>
+        </li>
+        <li>
+          <a target="_blank" href="./project2/index.html">Project- Diary</a>
+        </li>
+        <li><a class="active" href="#">Contact</a></li>
+        <li></li>
+      </ul>
+    </nav>
+    <div class="contact-container">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact-left"
+      >
+        <div class="contact-left-title">
+          <h2>Get in touch</h2>
+          <hr />
+        </div>
+        <input
+          type="hidden"
+          name="access_key"
+          value="57d6de19-38be-4a32-a692-04dfb72301d3"
+        />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your name"
+          class="contact-inputs"
+        />
+        <input
+          type="e-mail"
+          name="e-mail"
+          placeholder="Your E-mail"
+          class="contact-inputs"
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          class="contact-inputs"
+          required
+        ></textarea>
+        <button type="submit">
+          Submit<img src="./contact page/arrow_icon.png" alt="submit" />
+        </button>
+      </form>
+      <div class="contact-right">
+        <img src="./contact page/contactpage.png" alt="contact" />
+      </div>
+    </div>
+  </body>
+</html>
