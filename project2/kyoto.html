@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan Travel Diary</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <img class="fixed-image" src="./images/京都.jpg" alt="Kyoto" />
+
+    <header>
+      <section class="logo">
+        <img src="./images/logo.png" alt="Travel Logo" />
+        <h1>Japan Travel Diary</h1>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html"><i class="fa-solid fa-house"></i> Home </a>
+          </li>
+          <li>
+            <a href="./tokyo.html">
+              <i class="fa-solid fa-mountain-sun"></i> Tokyo
+            </a>
+          </li>
+          <li>
+            <a href="./osaka.html"><i class="fa-solid fa-archway"></i>Osaka</a>
+          </li>
+          <li>
+            <a class="active" href="./kyoto.html"
+              ><i class="fa-solid fa-leaf"></i>Kyoto</a
+            >
+          </li>
+          <li>
+            <a href="./okinawa.html"
+              ><i class="fa-solid fa-water"></i>Okinawa</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="background-img">
+        <div class="filter"></div>
+        <h3>- Kyoto ｜ 京都 （きょうと）-</h3>
+      </section>
+
+      <section class="info-circles">
+        <h3>- Kyoto -</h3>
+        <div class="intro">
+          <div class="image">
+            <img src="./images/金閣寺.jpg" alt="Kinkaku-ji " />
+          </div>
+          <div class="info">
+            <h2>Kinkaku-ji ｜ 金閣寺（きんかくじ）</h2>
+            <p>
+              Kinkaku-ji, or the Golden Pavilion, is one of Kyoto’s most famous
+              temples, known for its stunning gold-leaf exterior that reflects
+              beautifully in the surrounding pond. Originally built as a
+              shogun’s retirement villa, it is now a Zen temple and a symbol of
+              Kyoto’s serene beauty.
+            </p>
+          </div>
+        </div>
+        <div class="intro">
+          <div class="image">
+            <img src="./images/清水寺.jpg" alt="kiyomizu dera" />
+          </div>
+          <div class="info">
+            <h2>kiyomizu dera ｜ 清水寺（きよみずでら）</h2>
+            <p>
+              Kiyomizu-dera is a historic Buddhist temple in Kyoto, famous for
+              its large wooden stage that offers stunning views of the city and
+              surrounding nature. The temple is dedicated to the deity Kannon
+              and is particularly popular during cherry blossom and autumn leaf
+              seasons. Its name, meaning "Pure Water Temple," comes from the
+              Otawa Waterfall located within the grounds.
+            </p>
+          </div>
+        </div>
+        <div class="intro">
+          <div class="image">
+            <img src="./images/京都.jpg" alt="Fushimi Inari Taisha " />
+          </div>
+          <div class="info">
+            <h2>
+              Fushimi Inari Taisha ｜ 伏見稲荷大社（ふしみいなりたいしゃ）
+            </h2>
+            <p>
+              Fushimi Inari Taisha is a famous Shinto shrine in Kyoto, known for
+              its thousands of vibrant red torii gates that lead up the
+              mountain. Dedicated to Inari, the god of rice and agriculture, the
+              shrine is a spiritual and cultural landmark. Visitors can hike
+              through the gates, enjoy the peaceful atmosphere, and explore the
+              shrine’s various buildings along the way.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="logo">
+        <img src="./images/logo.png" alt="logo" />
+        <h3>Japan Travel Diary</h3>
+      </section>
+      <section class="links">
+        <a href="#"><img src="./Icons/facebook.svg" alt="facebook" /></a>
+        <a href="#"><img src="./Icons/instagram.svg" alt="instagram" /></a>
+        <a href="#"><img src="./Icons/twitter.svg" alt="twitter" /></a>
+        <a href="#"><img src="./Icons/youtube.svg" alt="youtube" /></a>
+      </section>
+    </footer>
+
+    <script>
+      setInterval(() => {
+        let topBackground = document.querySelector("section.background-img");
+        if (
+          topBackground.style.backgroundImage == 'url("../images/日本櫻花.jpg")'
+        ) {
+          topBackground.style.backgroundImage = 'url("../images/京都古城.jpg")';
+        } else if (
+          topBackground.style.backgroundImage == 'url("../images/京都古城.jpg")'
+        ) {
+          topBackground.style.backgroundImage = 'url("../images/大阪街頭.jpg")';
+        } else {
+          topBackground.style.backgroundImage = 'url("../images/日本櫻花.jpg")';
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>

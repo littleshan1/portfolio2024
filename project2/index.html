@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan Travel Diary</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <img class="fixed-image" src="./images/富士山.jpg" alt="fixed-image" />
+
+    <header>
+      <section class="logo">
+        <img src="./images/logo.png" alt="Travel Logo" />
+        <h1>Japan Travel Diary</h1>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a class="active"><i class="fa-solid fa-house"></i> Home </a>
+          </li>
+          <li>
+            <a href="./tokyo.html"
+              ><i class="fa-solid fa-mountain-sun"></i> Tokyo
+            </a>
+          </li>
+          <li>
+            <a href="./osaka.html"><i class="fa-solid fa-archway"></i>Osaka</a>
+          </li>
+          <li>
+            <a href="./kyoto.html"><i class="fa-solid fa-leaf"></i>Kyoto</a>
+          </li>
+          <li>
+            <a href="./okinawa.html"
+              ><i class="fa-solid fa-water"></i>Okinawa</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="background-img">
+        <div class="filter"></div>
+        <h3>
+          Leisure spaces, special holidays.<br />Plan a trip to Japan to relax
+          and rejuvenate.
+        </h3>
+      </section>
+
+      <section class="info-circles">
+        <h3>Tourist Attractions</h3>
+        <div class="circles">
+          <div class="circle">
+            <img src="./images/東京鐵塔.jpg" alt="Tokyo" />
+            <p>Tokyo</p>
+            <p>-Shinjuku-</p>
+            <p>-Shibuya-</p>
+            <p>-Fuji Mountain-</p>
+          </div>
+          <div class="circle">
+            <img src="./images/大阪.jpg" alt="Osaka Castle" />
+            <p>Osaka</p>
+            <p>-Universal Studio Japan-</p>
+            <p>-Osaka Castle-</p>
+            <p>-Dotonbori-</p>
+          </div>
+          <div class="circle">
+            <img src="./images/京都.jpg" alt="Fusihimi Inari" />
+            <p>Kyoto</p>
+            <p>-Kinkaku-ji-</p>
+            <p>-Kiyomizu dera-</p>
+            <p>-Fusihimi Inari Taisha-</p>
+          </div>
+          <div class="circle">
+            <img src="./images/沖繩.jpg" alt="Okinawa Beach" />
+            <p>Okinawa</p>
+            <p>-American Village-</p>
+            <p>-Kokusai Dori-</p>
+            <p>-Tokashiku-</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="empty-container">
+        <h3>Sharing my travel diary</h3>
+      </section>
+
+      <section class="google-map">
+        <h3>Japan Map</h3>
+        <p>
+          Japan is geographically located in East Asia, bordered to the east by
+          the Pacific Ocean, and to the west by the Sea of Japan, the Korea
+          Strait, the East China Sea, and the Eurasian continent, including
+          Siberia, the Korean Peninsula, and China. To the south, Japan is
+          adjacent to the Philippines Sea, Taiwan, and the Mariana Islands, and
+          to the north, it is bordered by the Sōya Strait, the Sea of Okhotsk,
+          the Kuril Islands, and Sakhalin. Japan enjoys a pleasant climate
+          throughout the year, with distinct changes between the four seasons.
+        </p>
+        <p>
+          The southern regions are warm, while the northern regions become
+          colder. In particular, during winter, the northwest monsoon brings
+          heavy snow to the Japan Sea side. On the other hand, the Pacific side
+          remains dry and clear, often referred to as "winter sunshine.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5300755.760441594!2d137.10323600911116!3d35.18148688884259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2sJapan!5e0!3m2!1sen!2sus!4v1664253921541!5m2!1sen!2sus"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <section class="logo">
+        <img src="./images/logo.png" alt="logo" />
+        <h3>Japan Travel Diary</h3>
+      </section>
+      <section class="links">
+        <a href="#"><img src="./Icons/facebook.svg" alt="facebook" /></a>
+        <a href="#"><img src="./Icons/instagram.svg" alt="instagram" /></a>
+        <a href="#"><img src="./Icons/twitter.svg" alt="twitter" /></a>
+        <a href="#"><img src="./Icons/youtube.svg" alt="youtube" /></a>
+      </section>
+    </footer>
+
+    <script>
+      setInterval(() => {
+        let topBackground = document.querySelector("section.background-img");
+        if (
+          topBackground.style.backgroundImage == 'url("../images/日本櫻花.jpg")'
+        ) {
+          topBackground.style.backgroundImage = 'url("../images/京都古城.jpg")';
+        } else if (
+          topBackground.style.backgroundImage == 'url("../images/京都古城.jpg")'
+        ) {
+          topBackground.style.backgroundImage = 'url("../images/大阪街頭.jpg")';
+        } else {
+          topBackground.style.backgroundImage = 'url("../images/日本櫻花.jpg")';
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>

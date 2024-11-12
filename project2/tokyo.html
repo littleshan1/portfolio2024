@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan Travel Diary</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <img class="fixed-image" src="./images/東京鐵塔.jpg" alt="fixed-image" />
+
+    <header>
+      <section class="logo">
+        <img src="./images/logo.png" alt="Travel Logo" />
+        <h1>Japan Travel Diary</h1>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html"><i class="fa-solid fa-house"></i> Home </a>
+          </li>
+          <li>
+            <a class="active" href="./tokyo.html">
+              <i class="fa-solid fa-mountain-sun"></i> Tokyo
+            </a>
+          </li>
+          <li>
+            <a href="./osaka.html"><i class="fa-solid fa-archway"></i>Osaka</a>
+          </li>
+          <li>
+            <a href="./kyoto.html"><i class="fa-solid fa-leaf"></i>Kyoto</a>
+          </li>
+          <li>
+            <a href="./okinawa.html"
+              ><i class="fa-solid fa-water"></i>Okinawa</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="background-img">
+        <div class="filter"></div>
+        <h3>- Tokyo ｜ 東京 （とうきょう）-</h3>
+      </section>
+
+      <section class="info-circles">
+        <h3>- Tokyo -</h3>
+        <div class="intro">
+          <div class="image">
+            <img src="./images/新宿.jpg" alt="Shinjuku" />
+          </div>
+          <div class="info">
+            <h2>Shinjuku ｜ 新宿（しんじゅく）</h2>
+            <p>
+              Shinjuku is a lively district in Tokyo, known for its skyscrapers,
+              shopping malls, and vibrant nightlife. It offers a mix of
+              entertainment, dining, and relaxation, with spots like Shinjuku
+              Gyoen National Garden for a peaceful escape. The area is also home
+              to one of the busiest train stations, Shinjuku Station, connecting
+              you to all of Tokyo.
+            </p>
+            <p>
+              1. Shinjuku Gyoen National Garden – a serene, spacious garden with
+              seasonal blooms.
+            </p>
+            <p>
+              2. Tokyo Metropolitan Government Building – free observation decks
+              with panoramic city views.
+            </p>
+          </div>
+        </div>
+        <div class="intro">
+          <div class="image">
+            <img src="./images/澀谷.jpg" alt="Shibuya" />
+          </div>
+          <div class="info">
+            <h2>Shibuya ｜ 渋谷（しぶやく）</h2>
+            <p>
+              Shibuya is one of Tokyo's most famous districts, known for its
+              vibrant youth culture, fashion, and entertainment. It’s a bustling
+              hub filled with shops, restaurants, and iconic landmarks. Shibuya
+              Crossing, the world-famous scramble intersection, is a must-see,
+              showcasing Tokyo’s energy and fast pace.
+            </p>
+            <p>
+              1. Shibuya Sky – a rooftop observation deck with stunning city
+              views.
+            </p>
+            <p>
+              2. Hachiko Statue – a popular meeting spot and tribute to Japan’s
+              loyal dog.
+            </p>
+          </div>
+        </div>
+        <div class="intro">
+          <div class="image">
+            <img src="./images/富士山04.jpg" alt="Fuji Mountain " />
+          </div>
+          <div class="info">
+            <h2>Fuji Mountain ｜ 富士山（ふじさん）</h2>
+            <p>
+              Mount Fuji, Japan's tallest and most iconic mountain, is a
+              majestic, often snow-capped volcano that draws millions of
+              visitors each year. Recognized as a UNESCO World Heritage Site, it
+              holds great cultural and spiritual significance in Japan. The
+              mountain offers scenic beauty, hiking opportunities, and stunning
+              views, especially in the summer when the climbing trails are open.
+            </p>
+            <p>
+              1. Fuji Five Lakes – a picturesque area with lakes offering views
+              of Mount Fuji, boating, and hot springs.
+            </p>
+            <p>
+              2. Chureito Pagoda – a famous photo spot with the pagoda and Mount
+              Fuji in the background.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="logo">
+        <img src="./images/logo.png" alt="logo" />
+        <h3>Japan Travel Diary</h3>
+      </section>
+      <section class="links">
+        <a href="#"><img src="./Icons/facebook.svg" alt="facebook" /></a>
+        <a href="#"><img src="./Icons/instagram.svg" alt="instagram" /></a>
+        <a href="#"><img src="./Icons/twitter.svg" alt="twitter" /></a>
+        <a href="#"><img src="./Icons/youtube.svg" alt="youtube" /></a>
+      </section>
+    </footer>
+
+    <script>
+      setInterval(() => {
+        let topBackground = document.querySelector("section.background-img");
+        if (
+          topBackground.style.backgroundImage == 'url("../images/日本櫻花.jpg")'
+        ) {
+          topBackground.style.backgroundImage = 'url("../images/京都古城.jpg")';
+        } else if (
+          topBackground.style.backgroundImage == 'url("../images/京都古城.jpg")'
+        ) {
+          topBackground.style.backgroundImage = 'url("../images/大阪街頭.jpg")';
+        } else {
+          topBackground.style.backgroundImage = 'url("../images/日本櫻花.jpg")';
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>

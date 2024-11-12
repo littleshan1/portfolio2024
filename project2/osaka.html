@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan Travel Diary</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <img class="fixed-image" src="./images/大阪.jpg" alt="fixed-image" />
+
+    <header>
+      <section class="logo">
+        <img src="./images/logo.png" alt="Travel Logo" />
+        <h1>Japan Travel Diary</h1>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html"><i class="fa-solid fa-house"></i> Home </a>
+          </li>
+          <li>
+            <a href="./tokyo.html">
+              <i class="fa-solid fa-mountain-sun"></i> Tokyo
+            </a>
+          </li>
+          <li>
+            <a class="active" href="./osaka.html"
+              ><i class="fa-solid fa-archway"></i>Osaka</a
+            >
+          </li>
+          <li>
+            <a href="./kyoto.html"><i class="fa-solid fa-leaf"></i>Kyoto</a>
+          </li>
+          <li>
+            <a href="./okinawa.html"
+              ><i class="fa-solid fa-water"></i>Okinawa</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="background-img">
+        <div class="filter"></div>
+        <h3>- Osaka ｜ 大坂 （おおざか）-</h3>
+      </section>
+
+      <section class="info-circles">
+        <h3>- Osaka -</h3>
+        <div class="intro">
+          <div class="image">
+            <img src="./images/遊樂園.jpeg" alt="Universal Studios Japan" />
+          </div>
+          <div class="info">
+            <h2>
+              Universal Studios Japan ｜（ユニバーサル・スタジオ・ジャパン）
+            </h2>
+            <p>
+              Universal Studios Japan (USJ) in Osaka is a top theme park
+              featuring immersive attractions based on popular films. Highlights
+              include The Wizarding World of Harry Potter with its Hogwarts
+              Castle, and Super Nintendo World, where guests can step into the
+              world of Mario. Other themed areas like Jurassic Park and Minion
+              Park add to the excitement, making USJ a must-visit for movie fans
+              and families alike.
+            </p>
+          </div>
+        </div>
+        <div class="intro">
+          <div class="image">
+            <img src="./images/大阪城02.jpg" alt="Osaka Castle" />
+          </div>
+          <div class="info">
+            <h2>Osaka Castle ｜ 大坂城（おおさかじょう）</h2>
+            <p>
+              Osaka Castle is a historic landmark in Japan, known for its
+              beautiful architecture and surrounding park. Originally built in
+              the 16th century, it played a major role in Japan’s unification.
+              The castle is especially popular during cherry blossom season,
+              when its gardens come alive with blooming sakura, offering
+              visitors a scenic and cultural experience.
+            </p>
+          </div>
+        </div>
+        <div class="intro">
+          <div class="image">
+            <img src="./images/道頓崛.jpg" alt="Dotonbori  " />
+          </div>
+          <div class="info">
+            <h2>Dotonbori ｜ 道顿堀（どうとんぼり）</h2>
+            <p>
+              Dotonbori is Osaka’s lively entertainment and dining district,
+              famous for its neon lights, bustling atmosphere, and iconic Glico
+              running man sign. Known for street food like takoyaki and
+              okonomiyaki, Dotonbori is a must-visit for its vibrant nightlife
+              and unique culinary delights.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="logo">
+        <img src="./images/logo.png" alt="logo" />
+        <h3>Japan Travel Diary</h3>
+      </section>
+      <section class="links">
+        <a href="#"><img src="./Icons/facebook.svg" alt="facebook" /></a>
+        <a href="#"><img src="./Icons/instagram.svg" alt="instagram" /></a>
+        <a href="#"><img src="./Icons/twitter.svg" alt="twitter" /></a>
+        <a href="#"><img src="./Icons/youtube.svg" alt="youtube" /></a>
+      </section>
+    </footer>
+
+    <script>
+      setInterval(() => {
+        let topBackground = document.querySelector("section.background-img");
+        if (
+          topBackground.style.backgroundImage == 'url("../images/日本櫻花.jpg")'
+        ) {
+          topBackground.style.backgroundImage = 'url("../images/京都古城.jpg")';
+        } else if (
+          topBackground.style.backgroundImage == 'url("../images/京都古城.jpg")'
+        ) {
+          topBackground.style.backgroundImage = 'url("../images/大阪街頭.jpg")';
+        } else {
+          topBackground.style.backgroundImage = 'url("../images/日本櫻花.jpg")';
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>
